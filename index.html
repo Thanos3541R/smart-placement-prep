@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Placement Prep — AI-powered skill gap analysis and personalized study roadmaps to land your dream job." />
+  <meta name="theme-color" content="#0a0e27" />
+  <title>Smart Placement Prep — AI-Powered Interview Readiness</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ─── Header ─────────────────────────────────────────── -->
+    <header class="app-header">
+      <div class="app-header__badge">
+        Hackathon Prototype
+      </div>
+      <h1 class="app-header__title">Smart Placement Prep</h1>
+      <p class="app-header__subtitle">
+        Upload your resume, paste a job description, and get an AI&#8209;powered skill&#8209;gap analysis with a personalized study roadmap.
+      </p>
+    </header>
+
+    <!-- ─── Input Section ──────────────────────────────────── -->
+    <section id="input-section" class="card section-animate" style="animation-delay: 0.2s">
+
+      <!-- Resume Upload -->
+      <div class="card__header">
+        <div class="card__icon">📄</div>
+        <div>
+          <div class="card__title">Resume Upload</div>
+          <div class="card__description">Drag &amp; drop or click to browse</div>
+        </div>
+      </div>
+
+      <div id="upload-zone" class="upload-zone" role="button" tabindex="0" aria-label="Upload your resume">
+        <div class="upload-zone__icon">⬆️</div>
+        <div class="upload-zone__text">Drop your resume here or <strong>click to browse</strong></div>
+        <div class="upload-zone__hint">PDF, DOCX, or TXT — Max 5 MB</div>
+        <input
+          type="file"
+          id="file-input"
+          class="upload-zone__input"
+          accept=".pdf,.docx,.doc,.txt"
+          aria-label="Choose resume file"
+        />
+        <div id="file-badge" class="upload-zone__file-badge" style="display: none">
+          📎 <span id="file-name"></span>
+          <button id="remove-file" class="remove-file" aria-label="Remove file">&times;</button>
+        </div>
+      </div>
+
+      <!-- Job Description -->
+      <div class="input-group">
+        <label class="input-group__label" for="job-description">
+          Target Job Description
+        </label>
+        <textarea
+          id="job-description"
+          class="input-group__textarea"
+          placeholder="Paste the full job description here… e.g. 'We are looking for a Full Stack Developer with 2+ years of experience in React, Node.js, and cloud services…'"
+          rows="6"
+        ></textarea>
+        <div id="job-desc-error" class="input-group__error">
+          ⚠️ Please enter a job description before generating a roadmap.
+        </div>
+      </div>
+
+      <!-- Generate Button -->
+      <button id="generate-btn" class="btn btn--primary">
+        <span id="generate-btn-text">🚀 Generate Roadmap</span>
+      </button>
+    </section>
+
+    <!-- ─── Loader ─────────────────────────────────────────── -->
+    <div id="loader-section" class="loader">
+      <div class="loader__spinner"></div>
+      <div class="loader__text">Analyzing your profile against the job description…</div>
+    </div>
+
+    <!-- ─── Results Section ────────────────────────────────── -->
+    <section id="results-section" class="results">
+
+      <!-- Score -->
+      <div class="card">
+        <div class="score-section">
+          <div class="score-ring">
+            <svg class="score-ring__svg" viewBox="0 0 160 160">
+              <defs>
+                <linearGradient id="scoreGradient" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#1d4ed8" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+              </defs>
+              <circle class="score-ring__bg" cx="80" cy="80" r="70" />
+              <circle id="score-ring-progress" class="score-ring__progress" cx="80" cy="80" r="70" />
+            </svg>
+            <div class="score-ring__value">
+              <div id="score-number" class="score-ring__number">0%</div>
+              <div class="score-ring__label">Match Score</div>
+            </div>
+          </div>
+          <h2 class="score-section__title">Skill Gap Analysis Complete</h2>
+          <p class="score-section__subtitle">Here's how your profile aligns with the target role</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-group">
+          <div class="skills-group__title">✅ Matched Skills</div>
+          <div id="matched-skills" class="skills-tags"></div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group__title">📚 Skills to Develop</div>
+          <div id="missing-skills" class="skills-tags"></div>
+        </div>
+      </div>
+
+      <!-- Study Plan -->
+      <div class="card">
+        <div class="card__header">
+          <div class="card__icon">🗺️</div>
+          <div>
+            <div class="card__title">Your Personalized Study Roadmap</div>
+            <div class="card__description">A 4-week action plan tailored to close your skill gaps</div>
+          </div>
+        </div>
+        <div id="study-plan" class="study-plan"></div>
+      </div>
+
+      <!-- Start Over -->
+      <div style="text-align: center;">
+        <button id="start-over-btn" class="btn btn--ghost">
+          ↩️ Start Over
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ─── Footer ─────────────────────────────────────────── -->
+    <footer class="app-footer">
+      <p class="app-footer__text">
+        Built for the Hackathon · Powered by
+        <a href="#" class="app-footer__link">Smart Placement Prep</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

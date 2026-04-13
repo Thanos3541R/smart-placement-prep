@@ -1,0 +1,25 @@
+Job Title: Full Stack Developer (Mid-Level)
+Company: NextGen Software
+
+About the Role:
+We are looking for a Full Stack Developer with 2-4 years of experience to join our core product team. You will be responsible for building new features from end-to-end, scaling our infrastructure, and improving application performance.
+
+Key Responsibilities:
+- Design, develop, and maintain robust full-stack applications.
+- Build interactive user interfaces using React and modern CSS.
+- Develop secure and scalable backend APIs using Node.js and TypeScript.
+- Work with relational computing and write optimized SQL queries.
+- Deploy and manage applications using Docker and AWS.
+
+Required Skills & Qualifications:
+- Strong proficiency in JavaScript/TypeScript and React.
+- Solid backend experience with Node.js.
+- Experience designing and consuming REST APIs.
+- Familiarity with SQL and database design (PostgreSQL preferred).
+- Understanding of CI/CD pipelines and cloud platforms (AWS, GCP).
+- Excellent communication and collaboration skills.
+
+Nice to Have:
+- Experience with Docker and Kubernetes.
+- Knowledge of System Design principles.
+- GraphQL experience.
