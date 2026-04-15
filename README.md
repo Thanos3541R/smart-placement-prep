@@ -1,72 +1,70 @@
-# 🚀 Smart Placement Prep
+# Getting Started with Create React App
 
-> A professional AI-powered skill gap analysis tool and personalized study roadmap generator.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 📖 What is this App?
+## Available Scripts
 
-Smart Placement Prep is a lightweight, single-page dashboard designed to help job seekers align their skills with specific roles. By comparing your resume against a target job description, the app assesses your readiness and builds a customized, week-by-week study plan to help you confidently prepare for interviews.
+In the project directory, you can run:
 
----
+### `npm start`
 
-## 🧪 Try it Out: Demo Files
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-If you just want to test how the app works, we've provided demo files to see it in action instantly!
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. **Demo Resume**: Use this file for the "Resume Upload" section.
-   - 📄 [`assets/demo_resume.txt`](assets/demo_resume.txt)
-2. **Demo Job Description**: Open this file, copy all the text, and paste it into the "Target Job Description" box.
-   - 📄 [`assets/demo_job_description.txt`](assets/demo_job_description.txt)
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 💻 How to Use the App
+### `npm run build`
 
-1. **Upload Your Resume**: Click on the dashed upload zone and select your resume (PDF, DOCX, or TXT), or simply drag and drop the file directly into the box. *(For testing, upload the `demo_resume.txt` file)*
-2. **Paste the Job Description**: Copy the full text of the job description you are aiming for and paste it into the text area. *(For testing, use the contents of `demo_job_description.txt`)*
-3. **Analyze**: Click the **Generate Roadmap** button.
-4. **Review Your Results**: The app will process the inputs and automatically generate:
-   - Your **Match Score** (a percentage showing how well you fit the role).
-   - **Matched Skills** (your current strengths that align with the job).
-   - **Skills to Develop** (areas requiring focus before your interview).
-   - A **4-week Action Plan** (providing week-by-week specific steps to bridge your skill gaps).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🛠️ How to Run Locally
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Because this is a pure frontend application, there are no complicated build steps or framework configurations.
+### `npm run eject`
 
-**Option 1: Direct File Open (Easiest)**
-Navigate to the project folder in your computer and double-click `index.html` to open it in your web browser. 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-**Option 2: Local Server (Recommended for developers)**
-If you have Node.js or Python installed, you can start a clean local server in the project folder via terminal:
-- **Node.js**: `npx -y serve .` (then visit `http://localhost:3000`)
-- **Python**: `python -m http.server 3000` (then visit `http://localhost:3000`)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 🌍 How to Share the App
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Since this uses plain HTML/CSS/JS, sharing it online for free is incredibly easy:
-1. **GitHub Pages**: Upload this folder to a GitHub repository, go to `Settings` > `Pages`, and select your `main` branch. GitHub will give you a live URL instantly.
-2. **Vercel / Netlify Drop**: You can literally drag and drop the `smart-placement-prep` folder into [Netlify Drop](https://app.netlify.com/drop) to publish a live, shareable link in 5 seconds without even making an account.
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## 🏗️ Technology Stack
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- **Structure**: Semantic HTML5
-- **Styling**: Vanilla CSS3 (Professional SaaS-inspired "Light" Theme)
-- **Logic**: Vanilla JavaScript (ES5+, Zero external dependencies)
+### Code Splitting
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## 🔮 Hackathon Vision
+### Analyzing the Bundle Size
 
-This prototype demonstrates the core UX and conceptual flow. Future production milestones include:
-- **Real LLM Integration**: Connecting the OpenAI/Gemini API to perform genuine semantic text analysis between the resume and job posting.
-- **Dynamic Resource Links**: Auto-generating links to specific Coursera, Udemy, or LeetCode resources corresponding to the exact skills the user is missing.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
----
-*Built with ❤️ for the Hackathon.*
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
